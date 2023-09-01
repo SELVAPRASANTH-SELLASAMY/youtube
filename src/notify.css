@@ -1,0 +1,64 @@
+.notify-container{
+    height: 60vmin;
+    width: 40vmin;
+    background-color: white;
+    border-radius: 1.5vmin;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: absolute;
+    right: -3.5vmin;
+    top: 4.5vmin;
+    z-index: 2;
+}
+.notify-container .header{
+    height: 5vmin;
+    width: 100%;
+    background-color: white;
+    border-radius: 1.5vmin 1.5vmin 0 0;
+    border-bottom: 0.25vmin solid rgb(212,212,212);
+    display: flex;
+    align-items: center;
+    padding-left: 2vmin;
+    font-size: 2vmin;
+    font-weight: 500;
+    position: relative;
+}
+.notify-container img{
+    height: 2.5vmin;
+}
+.notify-container .image{
+    height: 4vmin;
+    width: 4vmin;
+    border-radius: 50px;
+    position: absolute;
+    right: 2vmin;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.notify-container .image:hover{
+    background-color: rgb(237,237,237);
+}
+#settings{
+    font-size: 1.5vmin;
+    font-weight: 450;
+    height: 3.5vmin;
+    width: 8vmin;
+    color: white;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(143,143,143);
+    position: absolute;
+    top: 4.5vmin;
+    left: -2vmin;
+    display: none;
+}
+.notify-container img:hover + #settings{
+    display: grid;
+}
+.notify-container .new-notifications{
+    height: 55vmin;
+    font-size: 2vmin;
+    display: grid;
+    place-items: center;
+}

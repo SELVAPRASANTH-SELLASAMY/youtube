@@ -1,0 +1,7 @@
+.body-container{
+    width: 94.5%;
+    position: relative;
+    left: 5vmin;
+    display: flex;
+    flex-wrap: wrap;
+}

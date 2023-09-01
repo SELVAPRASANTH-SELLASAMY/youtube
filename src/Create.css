@@ -1,0 +1,30 @@
+.Create-container{
+    height: fit-content;
+    width: 20vmin;
+    background-color: white;
+    border-radius: 1vmin;
+    padding: 1vmin 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: absolute;
+    top: 5vmin;
+    left: 0;
+    z-index: 5;
+}
+.Create-container p{
+    font-size: 2vmin;
+}
+.Create-container img{
+    height: 4vmin;
+    width: 6.5vmin;
+    padding: 0 2vmin;
+}
+.upld-video,.live{
+    display: flex;
+    align-items: center;
+    height: 4.25vmin;
+    width: 100%;
+}
+.upld-video:hover,.live:hover{
+    background-color: rgb(237,237,237);
+    cursor: pointer;
+}
