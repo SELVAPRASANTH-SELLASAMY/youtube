@@ -1,0 +1,48 @@
+.content{
+    height: 3.25vmin;
+    min-width: fit-content;
+    padding: 0 1.5vmin;
+    background-color: rgb(237,237,237);
+    font-size: 1.65vmin;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5vmin;
+    font-weight: 450;
+    cursor: pointer;
+    position: relative;
+    left: 1.5vmin;
+    margin: 0.5vmin;
+}
+.content p:hover + .contentonhover{
+    /* display: grid; */
+    transition-delay: 800ms;
+}
+.contentonhover{
+    height: 3.25vmin;
+    width: 100%;
+    padding: 0 1.5vmin;
+    background-color: black;
+    color: white;
+    font-size: 1.65vmin;
+    display: grid;
+    place-items: center;
+    border-radius: 0.25vmin;
+    font-weight: 450;
+    position: absolute;
+    bottom: -3.5vmin;
+    left:50%;
+    z-index: 6;
+    display: none;
+}
+.suggesstion-container{
+    height: fit-content;
+    width: 93.5vw;
+    display: flex;
+    align-items: top;
+    margin-left: 5.5vmin;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+::-webkit-scrollbar{
+    height: 0vmin;
+}

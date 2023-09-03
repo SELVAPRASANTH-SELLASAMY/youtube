@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import home from './icons/home.svg';
 import shorts from './icons/shorts.svg';
 import sbs from './icons/subscription.svg';
@@ -127,7 +127,7 @@ function Leftelement(){
                 <div className="subs">
                     <p>Subscriptions</p>
                 </div>
-                {/* function to handle the subcribed channels */}
+                {/* function to handle the subscribed channels */}
                 {
                     channels.map((channel)=>(
                         <div className="channel-1">

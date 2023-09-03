@@ -1,4 +1,4 @@
-import './suggesstions.css';
+import './css/suggesstions.css';
 function Suggesstions(){
     const suggest=[
         'All',

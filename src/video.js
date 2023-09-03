@@ -1,4 +1,4 @@
-import './video.css';
+import './css/video.css';
 function Video(){
     return(
         <div className="player">

@@ -1,0 +1,117 @@
+.thumbnail{
+    height: 18vmin;
+    width: 35vmin;
+    background-color: rgb(237,237,237);
+    border-radius: 1.5vmin;
+    animation-name: load;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+.video-container{
+    height: 30vmin;
+    width: 35vmin;
+}
+.video-details{
+    height: fit-content;
+    width: 30vmin;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vmin;
+    margin-bottom: 0.5vmin;
+}
+.channel-logo{
+    height: 4.5vmin;
+    width: 4.5vmin;
+    border-radius: 50px;
+    background-color:rgb(207,207,207);
+    margin-top: 1vmin;
+    margin-right: 1vmin;
+    animation-name: load;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.video-informations{
+    height: fit-content;
+    width: 85%;
+    border-radius: 0.35vmin;
+    display: flex;
+    align-items: center;
+    font-size: 1.85vmin;
+    font-weight: 500;
+}
+.text{
+    height: 3.5vmin;
+    width: 100%;
+    background-color: rgb(207,207,207);
+    border-radius: 0.35vmin;
+    animation-name: load;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.channel-info{
+    height: 2vmin;
+    width: 100%;
+    font-size: 1.75vmin;
+    display: flex;
+    align-items: center;
+}
+.channel-text{
+    height: 2vmin;
+    width: 65%;
+    border-radius: 0.35vmin;
+    background-color: rgb(207,207,207);
+    animation-name: load;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.views{
+    height: 2vmin;
+    width: 85%;
+    font-size: 1.75vmin;
+    display: flex;
+    margin-top: 0.5vmin;
+    align-items: center;
+}
+.point{
+    height: 0.4vmin;
+    width: 0.4vmin;
+    border-radius: 50px;
+    background-color: rgb(155, 155, 155);
+    margin: 0 0.65vmin;
+    margin-top: 0.2vmin;
+}
+.channel-text1{
+    height: 2vmin;
+    width: 8.75vmin;
+    border-radius: 0.35vmin;
+    background-color: rgb(207,207,207);
+    animation-name: load;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes load {
+    0%{background-color: rgb(220, 220, 220)}
+    25%{background-color: rgb(210, 210, 210)}
+    50%{background-color: rgb(200, 200, 200)}
+    75%{background-color: rgb(190, 190, 190)}
+    100%{background-color: rgb(180, 180, 180)}
+}
+.player{
+    height: fit-content;
+    width: fit-content;
+    padding: 2vmin 2vmin;
+}
+.informations{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+.video-contents{
+    height: fit-content;
+    width: fit-content;
+}

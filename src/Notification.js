@@ -1,4 +1,4 @@
-import './notify.css';
+import './css/notify.css';
 import settingsicon from './icons/settings.svg';
 function Notification(){
     return(

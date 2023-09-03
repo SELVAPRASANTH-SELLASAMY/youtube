@@ -1,4 +1,4 @@
-import './Create.css';
+import './css/Create.css';
 import upld from './icons/upload.svg';
 import liv from './icons/createlive.svg';
 function Create(){

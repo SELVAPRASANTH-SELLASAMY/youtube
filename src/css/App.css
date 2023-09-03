@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+}
+.line{
+    height: 2.25px;
+    width: 20px;
+    background-color: black;
+    margin: 2.5px 0px;
+    border-radius: 50px;
+}
+.hamburger-menu{
+    height: 4vmin;
+    width: 4vmin;
+    display: grid;
+    place-items: center;
+    border-radius: 50px;
+    position: relative;
+    left: 2vmin;
+    margin-right: 2vmin;
+    cursor: pointer;
+}
+.hamburger-menu:hover{
+    background-color: rgb(237,237,237);
+}
+.hamburger-menu img{
+    height: 2.5vmin;
+}
+.youtube-logo{
+    height: 5vmin;
+    position: relative;
+}
+.youtube-logo img{
+    height: 5vmin;
+    width: 10.5vmin;
+    margin-left: 2vmin;
+}
+.youtube-logo .tm{
+    font-size: 1.15vmin;
+    position: absolute;
+    right: -1.5vmin;
+    top: 0.5vmin;
+    font-weight: 600;
+}
+.menu{
+    display: flex;
+    height: 5vmin;
+    align-items: center;
+}
+.top-menu{
+    height: 6.5vmin;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+.search input{
+    height: 4.5vmin;
+    width: 30vw;
+    border-radius: 50px 0 0 50px;
+    padding-left: 1.5vmin;
+    font-size: 1.85vmin;
+    color: rgb(147, 147, 147);
+    border: 0.15vmin solid rgb(147,147,147);
+    position: relative;
+}
+.search input:focus{
+    outline:none;
+    border-radius: 0 0 0 0;
+    border: 0.15vmin solid rgb(0, 76, 255);
+    border-left: none;
+}
+.search input:focus + .search-icon-onfocus{
+    display: flex;
+}
+.menu .search{
+    position: absolute;
+    left: 35%;
+}
+.search-icon,.search-icon-onfocus{
+    height: 4.5vmin;
+    width: 6.5vmin;
+    background-color: rgb(238, 238, 238);
+    border-radius: 0 50px 50px 0;
+    display: grid;
+    place-items: center;
+    border: 0.15vmin solid rgb(147,147,147);
+    border-left: none;
+    cursor: pointer;
+}
+.search-icon-onfocus{
+    border-radius: 50px 0 0 50px;
+    border: 0.15vmin solid rgb(0,76,255);
+    background-color: white;
+    width: 4.5vmin;
+    padding-left: 2vmin;
+    border-right: none;
+    display: none;
+    position: absolute;
+    left: -4.5vmin;
+    cursor: default;
+}
+.search-icon img,.search-icon-onfocus img{
+    height: 2.75vmin;
+}
+.search{
+    display: flex;
+}
+.microphone,.create,.notify,.profile{
+    height: 4.5vmin;
+    width: 4.5vmin;
+    border-radius: 50px;
+    background-color: rgb(237,237,237);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    margin-left: 1.5vmin;
+}
+.create,.notify,.profile{
+    margin-left: 0;
+}
+@keyframes alexa {
+    0%{background-color: rgba(0, 0, 255, 0.49);}
+    25%{background-color: rgba(255, 0, 0, 0.497);}
+    50%{background-color: rgba(0, 128, 0, 0.463);}
+    75%{background-color:rgba(137, 43, 226, 0.484)}
+    100%{background-color: rgba(255, 192, 242, 0.444);}
+}
+.microphone:hover{
+    background-color: rgb(220, 220, 220);
+}
+.microphone .what-is-it,.search-icon .what-is-it,.create .what-is-it,.notify .what-is-it{
+    font-size: 1.5vmin;
+    width: 17vmin;
+    height: 3.5vmin;
+    display: grid;
+    place-items: center;
+    background-color: rgb(143, 143, 143);
+    border-radius: 5px;
+    color: white;
+    padding-bottom: 0.25vmin;
+    position: absolute;
+    top: 5.5vmin;
+    visibility: hidden;
+    z-index: 2;
+}
+.search-icon .what-is-it{
+    width: 6.5vmin;
+}
+.create .what-is-it{
+    width: 6.5vmin;
+}
+.notify .what-is-it{
+    width: 10vmin;
+}
+.search-icon:hover .what-is-it,.microphone:hover .what-is-it,
+.create:hover .what-is-it,.notify:hover .what-is-it{
+    visibility: visible;
+}
+.microphone img,.create img,.notify img,.profile img{
+    height: 2.25vmin;
+    width: 2.25vmin;
+}
+.right-corner-menu{
+    height: fit-content;
+    width: 20vmin;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 1.5vmin;
+}
+.notify{
+    position: relative;
+}
+.create,.notify{
+    background-color: transparent;
+}
+.create:hover,.notify:hover{
+    background-color: rgb(237,237,237);
+}
+.notify .notification-count{
+    font-size: 1.25vmin;
+    height: 1.75vmin;
+    width: 1.75vmin;
+    background-color: red;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+    color: white;
+    position: absolute;
+    top: 0.85vmin;
+    right: 0.5vmin;
+    cursor: pointer;
+}
+.top-menu{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+.container{
+    height: 100vh;
+    width: 25vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    padding-bottom: 7vmin;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    background-color: white;
+    z-index: 2;
+}
+.home img,.shorts img,.subscription img,.library img,.history img,
+.your-videos img,.watch-later img,.liked-videos img,
+.show-more img,.manage-library img,.explore-cont img,
+.more-from-ytb img,.srhs img{
+    height: 2.25vmin;
+    margin-left: 1.5vmin;
+    margin-right: 2.5vmin;
+}
+.show-more img{
+    height: 1.5vmin;
+    margin-top: 0.35vmin;
+    padding-left: 0.5vmin;
+}
+.home p,.shorts p,.subscription p,.library p,.history p,
+.your-videos p,.watch-later p,.liked-videos p,
+.show-more p,.subscriptions p,.manage-library p,
+.explore-cont p,.more-from-ytb p,.srhs p{
+    font-size: 1.65vmin;
+}
+.home,.shorts,.subscription,.library,.history,
+.your-videos,.watch-later,.liked-videos,.show-more,
+.subscriptions .channel-1,.manage-library,
+.explore-cont .channel-1,.more-from-ytb .channel-1,.srhs .channel-1{
+    display: flex;
+    align-items: center;
+    height: 4.25vmin;
+    width: 22vmin;
+    border-radius: 8px;
+    margin: 0.25vmin;
+    cursor: pointer;
+}
+.home:hover,.shorts:hover,.subscription:hover,.library:hover,.history:hover,
+.your-videos:hover,.watch-later:hover,.liked-videos:hover,.show-more:hover,
+.subscriptions .channel-1:hover,.explore-cont .channel-1:hover,
+.more-from-ytb .channel-1:hover,.srhs .channel-1:hover,
+.lhyw .manage-library:hover{
+    background-color: rgb(237,237,237);
+}
+.hss,.lhyw,.subscriptions,.explore-cont,.more-from-ytb,.srhs,
+.bottom{
+    height: fit-content;
+    width: 20vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vmin;
+    border-bottom: 0.25vmin solid rgb(237,237,237);
+}
+.subscriptions,.explore-cont,.more-from-ytb{
+    position: relative;
+    padding-top: 5vmin;
+}
+.subscriptions .subs,.explore-cont .expl,.more-from-ytb .more{
+    font-size: 2vmin;
+    position: absolute;
+    left: 0;
+    top: 2vmin;
+}
+.subscriptions canvas{
+    height: 2.5vmin;
+    width: 2.5vmin;
+    border-radius: 50px;
+    margin-left: 1.5vmin;
+    margin-right: 2vmin;
+    background-color: rgb(202, 201, 201);
+    animation-name: load;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes load {
+    0%{background-color: rgb(220, 220, 220)}
+    25%{background-color: rgb(210, 210, 210)}
+    50%{background-color: rgb(200, 200, 200)}
+    75%{background-color: rgb(190, 190, 190)}
+    100%{background-color: rgb(180, 180, 180)}
+}
+.subscriptions .channel-1,.explore-cont .channel-1,
+.more-from-ytb .channel-1,.srhs .channel-1{
+    display: flex;
+}
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    width: 1vmin;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 50px;
+}
+.bottom span{
+    width: 18vmin;
+    display: flex;
+}
+.bottom a{
+    font-size: 1.5vmin;
+    text-decoration: none;
+    color: black;
+    margin: 0.15vmin 0;
+    margin-right: 1.5vmin;
+}
+.bottom .privacypolicy{
+    margin-top: 1vmin;
+}
+.bottom .copyrights{
+    width: 18vmin;
+}
+.bottom .copyrights p{
+    font-size: 1.6vmin;
+    margin-top: 1.5vmin;
+}
+.sgst{
+    width: 87.5%;
+    position: relative;
+    left: 25vmin;
+}
+.controlNotification,.control-create{
+    height: fit-content;
+    position: relative;
+}
+.notification-bar{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 5.5vmin;
+    z-index: 7;
+}
+.create-bar{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    top: 5.5vmin;
+    z-index: 7;
+}
+.menu-in-left-with-video{
+    height: fit-content;
+    width: fit-content;
+    background-color: green;
+    position: relative;
+}
+.video-display-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 3.5vmin;
+    z-index: -2;
+}
+.suggesstion-area{
+    position: fixed;
+    background-color: white;
+}

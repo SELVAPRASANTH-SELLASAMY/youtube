@@ -2,7 +2,7 @@ import Menu from './menu';
 function App()
 {
   return(
-    <div>
+    <div className="config">
       <Menu/>
     </div>
   );

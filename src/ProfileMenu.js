@@ -1,4 +1,4 @@
-import './profilemenu.css';
+import './css/profilemenu.css';
 import profile from './icons/your-channel.svg';
 import ytstudio from './icons/studioforprofile.svg';
 import swacc from './icons/switchaccount.svg';
